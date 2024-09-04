@@ -1,5 +1,6 @@
 package net.axoltdash.obelisks;
 
+import net.axoltdash.obelisks.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +21,7 @@ public class Obelisks implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		Moditems.registerItems();
+		
 	}
 }
