@@ -10,7 +10,8 @@ import net.minecraft.util.Identifier;
 
 public class Moditems {
 
-    public static final Item ZENITHITE = registerItem("zenithite", new Item(new Item.Settings()));
+    // public static final Item ZENITHITE = registerItem("zenithite", new Item(new Item.Settings()));
+    public static final Item ZENITHITE = registerItem("zenithite", new ZenithiteItem(new Item.Settings()));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register( Registries.ITEM, Identifier.of(Obelisks.MOD_ID, name), item);
